@@ -1,0 +1,13 @@
+{                
+    "user": {
+                "name" : "",
+                "password": ""
+            },
+    "newModel": "",
+    "models":[],
+    "modelfiles":[],
+    "editor":{
+        "model": "",
+        "filename": ""
+    }
+}

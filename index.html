@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hi</title>
+
+    <!-- 1.) Load SAPUI5 (from local server), select theme and control library -->
+    <script id="sap-ui-bootstrap"
+        type="text/javascript"
+        src="/sap/ui5/1/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_bluecrystal"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-resourceroots='{"p1942286791trial.hiadmin": ""}'>
+    </script>
+    <script>
+        //sap.ui.localResources("");
+        uiCore = sap.ui.getCore();
+        shell = new sap.m.Shell({
+				app: new sap.ui.core.ComponentContainer({
+					height : "100%",
+					name : "p1942286791trial.hiadmin.webapp"
+				})
+            }
+        );
+		uiCore.attachInit(function() {
+			shell.placeAt("content");
+		});
+    </script>
+
+</head>
+<body class="sapUiBody">
+    <div id="content"></div>
+</body>
+</html>

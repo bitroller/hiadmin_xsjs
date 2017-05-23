@@ -1,0 +1,23 @@
+{
+    "exposed": true,
+    "authentication": null,
+    "mime_mapping": [{
+        "extension": "jpg",
+        "mimetype": "image/jpeg"
+    }],
+    "force_ssl": false,
+    "enable_etags": true,
+    "prevent_xsrf": false,
+    "anonymous_connection": "p1942286791trial.hiadmin::",
+    "cors": [{
+        "enabled": true,
+        "allowMethods": ["GET","POST","HEAD","OPTIONS"],
+        "allowOrigin": "*",
+        "maxAge": "3600",
+        "allowHeaders": ["Access-Control-Allow-Origin","X-SMP-APPCID","Set-Cookie","Origin", "X-Requested-With", "Content-Type", "Accept", "Authorization","MaxDataServiceVersion","X-CSRF-Token","X-API-Key","DataServiceVersion","Accept-Language","X-HTTP-Method"],
+        "allowCredentials": true,
+        "exposeHeaders": ["Access-Control-Allow-Origin", "Origin", "Access-Control-Expose-Headers", "Access-Control-Allow-Headers", "Authorization"]
+    }],
+    "cache_control": "no-cache, no-store",
+    "default_file": "index.html"
+}
